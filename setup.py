@@ -6,7 +6,7 @@ setup(
     name='csv2html',
     version=__version__,
     description='A flexible utility to convert CSV files into HTML tables.',
-    url='http://github.com/dbohdan/csv2html',
+    url='http://github.com/newhotter/csv2html',
     author='Danyil Bohdan',
     author_email='danyil.bohdan@gmail.com',
     license='BSD',
