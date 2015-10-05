@@ -204,7 +204,7 @@ HTML tables')
         sys.exit(exit_codes['EX_NOINPUT'])
 
     # Import HTML output modules.
-    usinghtmlgen = args.forcehtmlgen
+    usinghtmlgen = 1
 
     if not usinghtmlgen:
         global html
