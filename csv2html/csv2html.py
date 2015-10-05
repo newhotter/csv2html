@@ -58,7 +58,7 @@ class TableGenHTMLgen(TableGen):
 class TableGenHtml(TableGen):
     '''Interface for the module html for generating tables.'''
 
-    def __init__(self, title='''<meta http-equiv="Content-Type" content="text/html; charset=utf-8">''', completedoc=False):
+    def __init__(self, title='', completedoc=False):
         super(TableGenHtml, self).__init__(title, completedoc)
         if self.completedoc:
             self.html = html.HTML('html')
