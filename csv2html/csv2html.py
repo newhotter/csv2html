@@ -63,7 +63,7 @@ class TableGenHtml(TableGen):
         if self.completedoc:
             self.html = html.HTML('html')
             # self.html.text('<!DOCTYPE html>', escape=False)
-            self.html.head(title)
+            self.html.head.title(title)
             self.table = self.html.body.table(border='1')
         else:
             self.html = html.HTML()
