@@ -64,8 +64,7 @@ class TableGenHtml(TableGen):
             self.html = html.HTML('html')
             # self.html.text('<!DOCTYPE html>', escape=False)
             self.html.head.title(title)
-            self.html.head('<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />')
-
+            self.html.head('''<meta http-equiv="Content-Type" content="text/html; charset=utf-8">''')
             self.table = self.html.body.table(border='1')
         else:
             self.html = html.HTML()
