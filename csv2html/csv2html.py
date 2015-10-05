@@ -39,10 +39,10 @@ class TableGenHTMLgen(TableGen):
 
     def __init__(self, title="", completedoc=False):
         super(TableGenHTMLgen, self).__init__(title, completedoc)
-        self.table = HTMLgen.Table(title)
+        self.table = htmlgen.Table(title)
         self.table.body = []
         if self.completedoc:
-            self.html = HTMLgen.SimpleDocument(title=title)
+            self.html = htmlgen.SimpleDocument(title=title)
             self.html.append(self.table)
 
     def heading(self, hrow):
