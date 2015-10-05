@@ -110,8 +110,8 @@ def convert_csv_to_html(inputstream, outputstream, title='',
     # external module. They do not hurt performance when csv2html is used as
     # a standalone program.
     if usehtmlgen:
-        global HTMLgen
-        import HTMLgen
+        global htmlgen
+        import htmlgen
         tablegen = TableGenHTMLgen(title, completedoc)
     else:
         global html
