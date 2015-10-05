@@ -215,9 +215,9 @@ HTML tables')
 
     # Careful, do _not_ merge this conditional block with the one above.
     if usinghtmlgen:
-        global HTMLgen
+        global htmlgen
         try:
-            import HTMLgen
+            import htmlgen
         except ImportError:
             if args.forcehtmlgen:
                 print("Forced to use HTMLgen but couldn't import it.\n\n\
